@@ -1,0 +1,15 @@
+{
+  "name": "@coralic/kirby-extended-writer",
+  "description": "Extends Kirby's Writer field with several marks and nodes",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "kirbyup src/index.js --watch",
+    "build": "kirbyup src/index.js"
+  },
+  "devDependencies": {
+    "kirbyup": "^0.21.1",
+    "postcss": "^8.4.5"
+  }
+}

@@ -1,0 +1,6 @@
+.k-writer .ProseMirror div.great-primer {
+  display: block;
+  font-size: var(--text-xl);
+  font-weight: 500;
+  line-height: 1.25em;
+}
