@@ -11,13 +11,25 @@ App::plugin('coralic/kirby-extended-writer', [
   'translations' => [
     'en' => [
       'coralic.extendedWriter.marks.highlight' => 'Highlight',
-      'coralic.extendedWriter.nodes.heading' => 'Heading',
-      'coralic.extendedWriter.nodes.greatPrimer' => 'Great Primer',
+      'coralic.extendedWriter.nodes.largerParagraph' => 'Larger Paragraph',
     ],
     'de' => [
       'coralic.extendedWriter.marks.highlight' => 'Hervorheben',
-      'coralic.extendedWriter.nodes.heading' => 'Überschrift',
-      'coralic.extendedWriter.nodes.greatPrimer' => 'Größerer Text'
+      'coralic.extendedWriter.nodes.largerParagraph' => 'Größerer Absatz'
+    ]
+  ],
+  'fields' => [
+    'list' => [
+      'props' => [
+        /**
+         * Sets the allowed list types. Available formats: `bulletList`, `orderedList`.
+         * Activate them all by passing `true`. Passing `false` will default to `bulletList`, otherwise default nodes are `bulletList` & `orderedList`.
+         * @param array|bool|null $nodes
+         */
+        'nodes' => function ($nodes = true) {
+          return $nodes;
+        }
+      ]
     ]
   ]
 ]);

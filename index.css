@@ -1,7 +1,12 @@
-.k-writer .ProseMirror div.great-primer {
+.k-list-input .ProseMirror {
+  line-height: 1.5em;
+}
+.k-list-input .ProseMirror ol > li::marker {
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+}.k-writer .ProseMirror div.-larger-paragraph {
   display: block;
   font-size: var(--text-xl);
   font-weight: 500;
   line-height: 1.25em;
-  margin-bottom: 0.75em;
 }

@@ -1,0 +1,34 @@
+{
+  "name": "coralic/kirby-extended-writer",
+  "description": "Supercharge Kirby's Writer field with new nodes, marks and features",
+  "type": "kirby-plugin",
+  "version": "1.0.0",
+  "keywords": [
+    "kirby"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/coralic/kirby-extended-writer#readme",
+  "authors": [
+    {
+      "name": "Tobias Möritz",
+      "email": "tobias@moeritz.io",
+      "homepage": "https://moeritz.io"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "getkirby/composer-installer": "^1.2"
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.6"
+  },
+  "scripts": {
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

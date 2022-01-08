@@ -1,0 +1,6 @@
+.k-writer .ProseMirror div.-larger-paragraph { // stylelint-disable-line selector-class-pattern
+  display: block;
+  font-size: var(--text-xl);
+  font-weight: 500;
+  line-height: 1.25em;
+}

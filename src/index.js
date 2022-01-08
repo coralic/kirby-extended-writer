@@ -1,32 +1,38 @@
-// Base
-import writerNodes from './plugins/writerNodes'
-import writerMarks from './plugins/writerMarks'
+// Custom nodes
+import writerNodes from '@/plugins/writerNodes'
+import LargerParagraph from '@/Nodes/LargerParagraph'
 
-// Nodes
-import BlockHeading from './Nodes/BlockHeading'
-import GreatPrimer from './Nodes/GreatPrimer'
+// Custom marks
+import writerMarks from '@/plugins/writerMarks'
+import Highlight from '@/Marks/Highlight'
 
-// Marks
-import Highlight from './Marks/Highlight'
+// List input with nodes
+import ListInput from '@/Input/ListInput.vue'
+import listNodes from '@/plugins/listNodes'
+
+// Styles
+import '@/index.scss'
 
 // Register plugin
 window.panel.plugin('coralic/frohberger-writer-nodes', {
-  use: [writerNodes, writerMarks],
+  use: [writerNodes, writerMarks, listNodes],
   thirdParty: {
     nodes: {
       // Import custom nodes from other plugins
       ...(window.panel.plugins.thirdParty.nodes || {}),
 
       // Provide class, not an instance of it
-      blockHeading: BlockHeading,
-      greatPrimer: GreatPrimer,
+      largerParagraph: LargerParagraph
     },
     marks: {
       // Import custom marks from other plugins
       ...(window.panel.plugins.thirdParty.marks || {}),
 
       // Provide class, not an instance of it
-      highlight: Highlight,
-    },
+      highlight: Highlight
+    }
   },
+  components: {
+    'k-list-input': ListInput
+  }
 })

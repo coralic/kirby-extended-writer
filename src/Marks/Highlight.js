@@ -1,10 +1,10 @@
-import Mark from '../Writer/Mark'
+import Mark from '@/Writer/Mark'
 
 export default class Highlight extends Mark {
   get button() {
     return {
       icon: 'star',
-      label: window.panel.$t('coralic.extendedWriter.nodes.highlight'),
+      label: window.panel.$t('coralic.extendedWriter.nodes.highlight')
     }
   }
 
@@ -22,10 +22,10 @@ export default class Highlight extends Mark {
       toDOM: (node) => [
         'mark',
         {
-          ...node.attrs,
+          ...node.attrs
         },
-        0,
-      ],
+        0
+      ]
     }
   }
 }
