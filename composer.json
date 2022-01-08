@@ -2,7 +2,7 @@
   "name": "coralic/kirby-extended-writer",
   "description": "Supercharge Kirby's Writer field with new nodes, marks and features",
   "type": "kirby-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "kirby"
   ],

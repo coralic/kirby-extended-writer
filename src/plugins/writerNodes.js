@@ -27,7 +27,7 @@ export default function (Vue) {
 
         // `heading` node serves as a wildcard for all headings
         // so there is no need to add the level-constrained heading node
-        if (!this.nodes.includes('heading')) {
+        if (this && this.nodes && !this.nodes.includes('heading')) {
           // we check for all levels via regex
           // and add them to an array
           const levels = this.nodes.reduce((acc, node) => {
