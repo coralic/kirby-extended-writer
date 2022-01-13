@@ -12,6 +12,7 @@ Extended Writer supercharges Kirby's built-in Writer field and block with useful
   - **Larger Paragraph**: A larger paragraph, e.g. for short introduction or highlighted passages. (`<div class="-larger-paragraph">`)
 - Enable & disable heading levels of the heading node with `h1`/`h2`/`h3`/`h4`/`h5`/`h6`
 - Node property support for the List field, to disable the default bullet list or ordered list nodes
+- Styling customizations via props (e.g. text-align)
 
 ## Requirements
 

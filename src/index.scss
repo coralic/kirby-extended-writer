@@ -1,6 +1,20 @@
-.k-writer .ProseMirror div.-larger-paragraph { // stylelint-disable-line selector-class-pattern
-  display: block;
-  font-size: var(--text-xl);
-  font-weight: 500;
-  line-height: 1.25em;
+.k-writer { // stylelint-disable-line selector-class-pattern
+  .ProseMirror div.-larger-paragraph {  // stylelint-disable-line selector-class-pattern
+    display: block;
+    font-size: var(--text-xl);
+    font-weight: 500;
+    line-height: 1.25em;
+  }
+
+  &.k-writer-text-align-center .ProseMirror { // stylelint-disable-line selector-class-pattern
+    text-align: center;
+  }
+
+  &.k-writer-text-align-left .ProseMirror { // stylelint-disable-line selector-class-pattern
+    text-align: left;
+  }
+
+  &.k-writer-text-align-right .ProseMirror { // stylelint-disable-line selector-class-pattern
+    text-align: right;
+  }
 }

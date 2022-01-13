@@ -30,6 +30,16 @@ App::plugin('coralic/kirby-extended-writer', [
           return $nodes;
         }
       ]
+    ],
+    'writer' => [
+      'props' => [
+        /**
+         * Changes the text orientation of the Writer fields contents. Available formats: `left`, `center`, `right`.
+         */
+        'align' => function ($align = 'left') {
+          return in_array($align, ['left', 'center', 'right']) ? $align : 'left';
+        },
+      ]
     ]
   ]
 ]);

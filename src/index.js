@@ -12,10 +12,11 @@ import listNodes from '@/plugins/listNodes'
 
 // Styles
 import '@/index.scss'
+import writerTextAlign from './plugins/writerTextAlign'
 
 // Register plugin
 window.panel.plugin('coralic/frohberger-writer-nodes', {
-  use: [writerNodes, writerMarks, listNodes],
+  use: [writerNodes, writerMarks, listNodes, writerTextAlign],
   thirdParty: {
     nodes: {
       // Import custom nodes from other plugins
