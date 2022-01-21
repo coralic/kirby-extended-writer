@@ -39,7 +39,27 @@ composer require coralic/kirby-extended-writer
 
 ## Usage
 
-`TODO`
+This plugin adds the mark `highlight` and the nodes `largerParagraph`, `h1`, `h2`, `h3`, `h4`, `h5` and `h6`.
+You can activate them in the writer field like this:
+
+```yaml
+text:
+  label: Text
+  type: writer
+  marks:
+    - bold
+    - italic
+    - link
+    - email
+    - highlight
+  nodes:
+    - h1
+    - h2
+    - h3
+    - largerParagraph
+    - bulletList
+    - orderedList
+```
 
 ## Credits
 
