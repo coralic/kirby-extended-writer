@@ -10,9 +10,9 @@ export default class largerParagraph extends Node {
     }
   }
 
-  commands({ utils, type }) {
+  commands({ type, schema, utils }) {
     return {
-      largerParagraph: () => utils.setBlockType(type)
+      largerParagraph: attrs => utils.toggleBlockType(type, schema.nodes.paragraph, attrs)
     }
   }
 
