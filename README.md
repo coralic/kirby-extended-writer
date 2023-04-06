@@ -1,5 +1,8 @@
 ![Preview of Kirby Extended Writer plugin](./.github/kirby-extended-writer.png)
 
+> Most features that this plugin provides or is meant to provide in the future will be added to [Kirby 4.0+.](https://kirby.nolt.io/roadmap)
+> It still works for Kirby 3.6-3.9+. Going forward, this plugin will be archived and not receive any more updates as our wishes have been fulfilled :)
+
 # Extended Writer
 
 Extended Writer supercharges Kirby's built-in Writer field and block with useful marks, nodes and features you wish were built-in.
